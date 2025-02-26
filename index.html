@@ -27,7 +27,8 @@
             font-family: 'Poppins', serif;
             color: var(--text-color);
             text-align: center;
-            background: linear-gradient(135deg, rgb(30, 30, 30), rgb(60, 20, 100));
+            background-image: linear-gradient(45deg, rgb(0, 0, 0) 50%, rgb(60, 0, 90));
+            transition: opacity 0.5s linear;
         }
 
 
@@ -40,7 +41,7 @@
 
         /* Hero Section */
         .hero {
-            padding: 50px 20px;
+            padding: 30vh 40px 40vh;
         }
 
         .hero h1 {
@@ -64,8 +65,9 @@
             color: var(--text-color);
             text-decoration: none;
             font-size: 18px;
-            border-radius: 5px;
+            border-radius: 12px;
             transition: 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .btn:hover {
@@ -86,6 +88,7 @@
             border-radius: 5px;
             font-size: 18px;
             transition: 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .feature-item:hover {
@@ -106,6 +109,7 @@
             border-radius: 5px;
             text-align: left;
             transition: 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .faq-item:hover {
@@ -135,6 +139,7 @@
             border-radius: 5px;
             text-align: left;
             transition: 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .notes-item:hover {
@@ -164,20 +169,16 @@
     </style>
 </head>
 <body>
-
-    <header>
-        Lightspeed Mod Loader
-    </header>
-
-    <section class="hero">
+    <section class="hero" id="hero">
         <h1>Optimized. Compatible. Fast. Modular.</h1>
+        <h2>Welcome to Lightspeed Mod Loader</h2>
         <p>The next-generation mod loader designed with performance and compatibility in mind.</p>
         <a href="https://github.com/glennuke1/LightspeedModLoader/raw/refs/heads/master/LML_Installer/LML_Installer.exe" class="btn">Download</a>
         <a href="https://github.com/glennuke1/LightspeedModLoader" class="btn">Github</a>
     </section>
 
     <!-- Features Section -->
-    <section class="features">
+    <section class="features" id="features">
         <h2>Why Choose Lightspeed Mod Loader?</h2>
         <div class="feature-item">⚡ Optimized - Built for performance.</div>
         <div class="feature-item">🛠️ High Compatibility - Works with existing 90% of MSCLoader mods.</div>
@@ -239,6 +240,6 @@
     <footer>
         &copy; 2025 Lightspeed Mod Loader. All rights reserved.
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
