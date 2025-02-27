@@ -15,7 +15,7 @@ if (page == "credits") {
 else if (page == "changelogs") {
   starCount = 300
 }
-else if (page == "index") {
+else {
   starCount = 200
 }
 
