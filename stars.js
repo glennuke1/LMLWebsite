@@ -9,13 +9,13 @@ var page = path.split("/").pop();
 
 var starCount;
 
-if (page == "credits.html") {
+if (page == "credits") {
   starCount = 400
 }
-else if (page == "changelogs.html") {
+else if (page == "changelogs") {
   starCount = 300
 }
-else if (page == "index.html") {
+else if (page == "index") {
   starCount = 200
 }
 
