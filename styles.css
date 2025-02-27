@@ -22,6 +22,19 @@ body {
             rgb(60, 0, 90));
     transition: opacity 0.5s linear;
     min-height: 100vh;
+
+    opacity: 0;
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Header */
